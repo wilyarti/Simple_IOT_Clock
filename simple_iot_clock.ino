@@ -4,7 +4,7 @@
 #include <DNSServer.h>            //Local DNS Server used for redirecting all requests to the configuration portal
 #include <ESP8266WebServer.h>     //Local WebServer used to serve the configuration portal
 #include <WiFiManager.h>          //https://github.com/tzapu/WiFiManager WiFi Configuration Magic
-#include <MD_MAX72xx.h>
+#include <MD_MAX72xx.h>           //https://github.com/MajicDesigns/MD_MAX72XX
 
 #define MAX_DEVICES 4
 #define CLK_PIN   D5  // or SCK
