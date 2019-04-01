@@ -75,6 +75,7 @@ void loop() {
   }
 
   uint32_t actualTime = timeUNIX + (currentMillis - lastNTPResponse) / 1000;
+  // Change 10 below to your time offset. For example I am in AEST (QLD) which is UTC plus 10.
   uint32_t localTime = actualTime + (10 * 60 * 60);
   if (actualTime != prevActualTime && timeUNIX != 0) { // If a second has passed since last print
     prevActualTime = actualTime;
